@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Ambasewana</title>
+    <link rel="stylesheet" href="room.css" />
+    <link rel="stylesheet" href="HF.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>H</div>
+            <span>HOTEL<br />AMBASEWANA</span>
+          </div>
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./room.html">Accommodation</a></li>
+          <li><a href="./Wedding.html">Wedding & Event</a></li>
+          <li><a href="./menu.html">Offers</a></li>
+          <li><a href="./dining.html">Dining</a></li>
+          <li><button class="btn">Book Now</button></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="accommodation">
+        <h2>Our Rooms</h2>
+        <div class="rooms">
+      
+          <!-- AC Single Room -->
+          <div class="room-card">
+            <img src="pht/room-1.jpg" alt="AC Single Room">
+            <h3>AC Single Room</h3>
+            <p>Comfortable room with air conditioning and a single bed, ideal for solo travelers.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+      
+          <!-- Non-AC Double Room -->
+          <div class="room-card">
+            <img src="pht/news-2.jpg" alt="AC Double Room">
+            <h3>AC Double Room</h3>
+            <p>Elegant and cool double bed room with premium comfort and scenic views.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+      
+          <!-- AC Double Room -->
+          <div class="room-card">
+            <img src="pht/room-3.jpg" alt="Non-AC Single Room">
+            <h3>Non-AC Single Room</h3>
+            <p>Spacious room with two beds and ventilation, perfect for budget-conscious travelers.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+      
+          <!-- Family Room -->
+          <div class="room-card">
+            <img src="pht/room-2.jpg" alt="Non-Ac Double Room">
+            <h3>Non-AC Double Room </h3>
+            <p>Large room with multiple beds, air conditioning, and family-friendly amenities.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+          <div class="room-card">
+            <img src="pht/non.jpg" alt="Family Room">
+            <h3>Family Room(AC)</h3>
+            <p>Large room with multiple beds, air conditioning, and family-friendly amenities.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+          <div class="room-card">
+            <img src="pht/fam.jpg" alt="Family Room">
+            <h3>Family Room(N-AC)</h3>
+            <p>Spacious room with two beds and ventilation, perfect for budget-conscious travelers.</p>
+            <a href="./booking.html" class="book-btn">Book Now</a>
+          </div>
+      </section>
+      
+    <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__about">
+            <h3>Hotel Ambasewana</h3>
+            <p>Your gateway to luxury and serenity in the heart of Sri Lanka.</p>
+          </div>
+          <div class="footer__contact">
+            <h4>Contact</h4>
+            <p>123 Paradise Road, Anuradhapura, Sri Lanka</p>
+            <p>Email: info@ambasewana.lk</p>
+            <p>Phone: +94 71 123 4567</p>
+            <div class="footer__socials">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Hotel Ambasewana. All rights reserved.</p>
+        </div>
+      </footer>
+  
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+  
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
+    </body>
+  </html>
+  
