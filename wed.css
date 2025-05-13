@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(rgba(246, 246, 246, 0.5), rgba(113, 134, 167, 0.5)),
+    url("pht/wedding.jpg");
+    background-size: cover;       /* Use 'cover' to fill screen, or 'contain' to see full image */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Prevent tiling */
+    background-attachment: fixed;   /* Keeps image fixed on scroll */
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.wed_subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #e9c731;
+    font-style: italic;
+    margin-left: 10px;
+}
+.wed_title {
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #272727;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Playfair Display", serif;
+}
+.wed_para{
+    margin-bottom: 80px;
+}
+.wed_para p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #0c0101;
+    font-weight: 400;
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    padding-left: 50px;
+text-align: justify;
+padding-right: 50px;
+}
+.wding{
+    display: flex; gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    
+
+}
+.wding img
+ {
+
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.wedding{
+    margin-left: 40px;
+        display: flex;
+        gap: 20px; /* spacing between images */
+        /* overflow-x: auto;  */
+        padding: 20px;
+      }
+.wedding img{
+    max-height: 300px;
+    width: auto;
+    border-radius: 8px;
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}

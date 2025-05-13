@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Ambasewana - Rooms</title>
+  <link rel="stylesheet" href="book.css" />
+  <link rel="stylesheet" href="HF.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <div>H</div>
+          <span>HOTEL<br />AMBASEWANA</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./room.html">Accommodation</a></li>
+        <li><a href="./Wedding.html">Wedding & Event</a></li>
+        <li><a href="./Offers.html">Offers</a></li>
+        <li><button class="btn"><a href="book.html">Book Now</button></a></li>
+      </ul>
+    </div>
+  </nav>
+<body>
+<video autoplay muted loop id="bgVideo">
+    <source src="pht/lux.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- 🌐 Content Container -->
+  <div class="container">
+
+  <h1>Hotel Ambasewana Booking</h1>
+
+   <div id="signupSection">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Full Name" required />
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a onclick="showLogin()">Login</a></p>
+      </form>
+    </div>
+
+    <!-- Login -->
+    <div id="loginSection" class="hidden">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a onclick="showSignup()">Sign Up</a></p>
+      </form>
+    </div>
+<!-- Booking -->
+    <div id="bookingSection" class="hidden">
+      <h2>Book a Room</h2>
+      <form id="bookingForm">
+        <input type="date" id="checkin" required />
+        <input type="date" id="checkout" required />
+        <select id="roomType" required>
+          <option value="">Select Room Type</option>
+          <option value="Standard">Standard</option>
+          <option value="Deluxe">Deluxe</option>
+          <option value="Suite">Suite</option>
+        </select>
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="bookingMessage"></p>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__about">
+        <h3>Hotel Ambasewana</h3>
+        <p>Your gateway to luxury and serenity in the heart of Sri Lanka.</p>
+      </div>
+      <div class="footer__contact">
+        <h4>Contact</h4>
+        <p>123 Paradise Road, Anuradhapura, Sri Lanka</p>
+        <p>Email: info@ambasewana.lk</p>
+        <p>Phone: +94 71 123 4567</p>
+        <div class="footer__socials">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Hotel Ambasewana. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    function showLogin() {
+      document.getElementById("signupSection").classList.add("hidden");
+      document.getElementById("loginSection").classList.remove("hidden");
+    }
+
+    function showSignup() {
+      document.getElementById("loginSection").classList.add("hidden");
+      document.getElementById("signupSection").classList.remove("hidden");
+    }
+
+    function showBooking() {
+      document.getElementById("signupSection").classList.add("hidden");
+      document.getElementById("loginSection").classList.add("hidden");
+      document.getElementById("bookingSection").classList.remove("hidden");
+    }
+
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("signupName").value;
+      const email = document.getElementById("signupEmail").value;
+      const password = document.getElementById("signupPassword").value;
+      const user = { name, email, password };
+      localStorage.setItem("user", JSON.stringify(user));
+      alert("Account created! Please login.");
+      showLogin();
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPassword").value;
+      const savedUser = JSON.parse(localStorage.getItem("user"));
+
+      if (savedUser && savedUser.email === email && savedUser.password === password) {
+        alert("Login successful!");
+        showBooking();
+      } else {
+        alert("Invalid credentials!");
+      }
+    });
+
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const checkin = document.getElementById("checkin").value;
+      const checkout = document.getElementById("checkout").value;
+      const roomType = document.getElementById("roomType").value;
+      document.getElementById("bookingMessage").innerText =
+        `Room booked from ${checkin} to ${checkout} as ${roomType}.`;
+    });
+
+    function logout() {
+      alert("Logged out!");
+      location.reload();
+    }
+  </script>
+</body>
+</html>

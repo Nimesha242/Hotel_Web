@@ -1,123 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Ambasewana</title>
-    <link rel="stylesheet" href="room.css" />
-    <link rel="stylesheet" href="HF.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="nav__bar">
-        <div class="nav__header">
-          <div class="logo nav__logo">
-            <div>H</div>
-            <span>HOTEL<br />AMBASEWANA</span>
-          </div>
-          <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Ambasewana - Rooms</title>
+  <link rel="stylesheet" href="room.css" />
+  <link rel="stylesheet" href="HF.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <div>H</div>
+          <span>HOTEL<br />AMBASEWANA</span>
         </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="./Home.html">Home</a></li>
-          <li><a href="./room.html">Accommodation</a></li>
-          <li><a href="./Wedding.html">Wedding & Event</a></li>
-          <li><a href="./menu.html">Offers</a></li>
-          <li><a href="./dining.html">Dining</a></li>
-          <li><button class="btn">Book Now</button></li>
-        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-    </nav>
-    <section class="accommodation">
-        <h2>Our Rooms</h2>
-        <div class="rooms">
-      
-          <!-- AC Single Room -->
-          <div class="room-card">
-            <img src="pht/room-1.jpg" alt="AC Single Room">
-            <h3>AC Single Room</h3>
-            <p>Comfortable room with air conditioning and a single bed, ideal for solo travelers.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-      
-          <!-- Non-AC Double Room -->
-          <div class="room-card">
-            <img src="pht/news-2.jpg" alt="AC Double Room">
-            <h3>AC Double Room</h3>
-            <p>Elegant and cool double bed room with premium comfort and scenic views.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-      
-          <!-- AC Double Room -->
-          <div class="room-card">
-            <img src="pht/room-3.jpg" alt="Non-AC Single Room">
-            <h3>Non-AC Single Room</h3>
-            <p>Spacious room with two beds and ventilation, perfect for budget-conscious travelers.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-      
-          <!-- Family Room -->
-          <div class="room-card">
-            <img src="pht/room-2.jpg" alt="Non-Ac Double Room">
-            <h3>Non-AC Double Room </h3>
-            <p>Large room with multiple beds, air conditioning, and family-friendly amenities.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-          <div class="room-card">
-            <img src="pht/non.jpg" alt="Family Room">
-            <h3>Family Room(AC)</h3>
-            <p>Large room with multiple beds, air conditioning, and family-friendly amenities.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-          <div class="room-card">
-            <img src="pht/fam.jpg" alt="Family Room">
-            <h3>Family Room(N-AC)</h3>
-            <p>Spacious room with two beds and ventilation, perfect for budget-conscious travelers.</p>
-            <a href="./booking.html" class="book-btn">Book Now</a>
-          </div>
-      </section>
-      
-    <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__about">
-            <h3>Hotel Ambasewana</h3>
-            <p>Your gateway to luxury and serenity in the heart of Sri Lanka.</p>
-          </div>
-          <div class="footer__contact">
-            <h4>Contact</h4>
-            <p>123 Paradise Road, Anuradhapura, Sri Lanka</p>
-            <p>Email: info@ambasewana.lk</p>
-            <p>Phone: +94 71 123 4567</p>
-            <div class="footer__socials">
-              <h4>Follow Us</h4>
-              <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-            
+      <ul class="nav__links" id="nav-links">
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./room.html">Accommodation</a></li>
+        <li><a href="./Wedding.html">Wedding & Event</a></li>
+        <li><a href="./Offers.html">Offers</a></li>
+        <li><button class="btn"><a href="book.html">Book Now</button></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Accommodation Section -->
+  <section class="accommodation">
+    <h2>Our Rooms</h2>
+    <div class="rooms">
+
+      <!-- AC Single Room -->
+      <div class="room-card">
+        <img src="pht/room-1.jpg" alt="AC Single Room">
+        <h3>AC Single Room</h3>
+        <p>Comfortable room with air conditioning and a single bed, ideal for solo travelers.</p><br/>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+
+      <!-- AC Double Room -->
+      <div class="room-card">
+        <img src="pht/news-2.jpg" alt="AC Double Room">
+        <h3>AC Double Room</h3>
+        <p>Elegant air-conditioned room with a double bed, offering comfort and scenic views.</p>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+
+      <!-- Non-AC Single Room -->
+      <div class="room-card">
+        <img src="pht/room-3.jpg" alt="Non-AC Single Room">
+        <h3>Non-AC Single Room</h3>
+        <p>Budget-friendly single bed room with natural ventilation, perfect for solo travelers.</p>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+
+      <!-- Non-AC Double Room -->
+      <div class="room-card">
+        <img src="pht/room-2.jpg" alt="Non-AC Double Room">
+        <h3>Non-AC Double Room</h3>
+        <p>Spacious room with a double bed and ventilation, ideal for comfortable stays at great value.</p>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+
+      <!-- Family Room (AC) -->
+      <div class="room-card">
+        <img src="pht/non.jpg" alt="Family Room (AC)">
+        <h3>Family Room (AC)</h3>
+        <p>Large air-conditioned room with multiple beds and family-friendly features.</p><br/>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+
+      <!-- Family Room (Non-AC) -->
+      <div class="room-card">
+        <img src="pht/fam.jpg" alt="Family Room (Non-AC)">
+        <h3>Family Room (Non-AC)</h3>
+        <p>Spacious family room with natural airflow and budget-friendly comfort.</p><br/>
+        <a href="./booking.html" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Availability Form -->
+    <div class="availability-form">
+      <h2>Check Availability</h2>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" required min="2025-01-01" max="2030-12-31" />
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" required min="2025-01-01" max="2030-12-31" />
+
+      <label for="guests">Guests:</label>
+      <input type="number" id="guests" min="1" max="25" required />
+
+      <button onclick="checkAvailability()">Check</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__about">
+        <h3>Hotel Ambasewana</h3>
+        <p>Your gateway to luxury and serenity in the heart of Sri Lanka.</p>
+      </div>
+      <div class="footer__contact">
+        <h4>Contact</h4>
+        <p>123 Paradise Road, Anuradhapura, Sri Lanka</p>
+        <p>Email: info@ambasewana.lk</p>
+        <p>Phone: +94 71 123 4567</p>
+        <div class="footer__socials">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-        <div class="footer__bottom">
-          <p>&copy; 2025 Hotel Ambasewana. All rights reserved.</p>
-        </div>
-      </footer>
-  
-      <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navLinks = document.getElementById("nav-links");
-  
-        menuToggle.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-        });
-      </script>
-    </body>
-  </html>
-  
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Hotel Ambasewana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Check availability logic
+    function checkAvailability() {
+      const checkin = document.getElementById("checkin").value;
+      const checkout = document.getElementById("checkout").value;
+      const guests = document.getElementById("guests").value;
+      const result = document.getElementById("result");
+
+      if (!checkin || !checkout || !guests) {
+        result.innerText = "Please fill in all fields.";
+        return;
+      }
+
+      result.innerText = `Availability requested for ${guests} guest(s) from ${checkin} to ${checkout}.`;
+    }
+  </script>
+  <script src="home.js"></script>
+</body>
+</html>

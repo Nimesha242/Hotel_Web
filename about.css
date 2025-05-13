@@ -1,4 +1,13 @@
-
+body{
+    background-image: linear-gradient(rgba(208, 180, 180, 0.5), rgba(2, 6, 12, 0.5));
+    background-size: cover;       /* Use 'cover' to fill screen, or 'contain' to see full image */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Prevent tiling */
+    background-attachment: fixed;   /* Keeps image fixed on scroll */
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
 
 .ab_subtitle {
     font-family: "Cormorant Garamond", serif;
@@ -40,12 +49,12 @@ h1 {
     margin-bottom: 80px;
 }
 .ab_para p{
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
-    color: #0e0d0d;
+    color: #00000c;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     padding-left: 50px;
 text-align: justify;
 padding-right: 50px;
