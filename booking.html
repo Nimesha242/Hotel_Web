@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking - Hotel Miranda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="HF.css" />
+   <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+   <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>H</div>
+            <span>HOTEL<br />AMBASEWANA</span>
+          </div>
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./room.html">Accommodation</a></li>
+          <li><a href="./Wedding.html">Wedding & Event</a></li>
+          <li><a href="./Offers.html">Offers</a></li>
+          <li><button class="btn"><a href="book.html">Book Now</button></a></li>
+        </ul>
+      </div>
+    </nav>
+  <main>
+    <section class="booking-section">
+      <h2>Reservation Form</h2>
+      <form class="booking-form" id="bookingForm" action="#" method="POST">
+        <label for="roomType">Room Type</label>
+        <select id="roomType" name="roomType" required>
+          <option value="">-- Select Room --</option>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="deluxe">Deluxe Room</option>
+        </select>
+
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" name="checkin" required />
+
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" name="checkout" required />
+
+        <label for="guests">Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required />
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
